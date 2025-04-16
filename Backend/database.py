@@ -1,13 +1,11 @@
-from . import firebase_config as db 
+from . firebase_config import db 
 
 def AddToCollection(collection_name: str, data: dict) -> str:
     """
     Adds a document to the specified Firestore collection.
-
     Args:
         collection_name (str): The name of the Firestore collection.
         data (dict): The data to store in the document.
-
     Returns:
         str: The ID of the newly created document.
     """

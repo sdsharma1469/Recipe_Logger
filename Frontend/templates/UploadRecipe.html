@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Recipe</title>
+</head>
+<body>
+  <h1>Upload a Recipe</h1>
+  <form action="http://localhost:8000/UploadRecipe" method="post">
+    <label for="title">Recipe Name:</label><br>
+    <input type="text" id="title" name="title" required><br><br>
+    <label for="steps">Steps:</label><br>
+    <textarea id="steps" name="steps" rows="5" cols="40" required></textarea><br><br>
+    <input type="hidden" name="Target" value="Recipes">
+    <button type="submit">Upload</button>
+  </form>
+</body>
+</html>
